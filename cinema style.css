@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #1a1a1a, #2c3e50);
+    color: #fff;
+    text-align: center;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #141414;
+    padding: 20px;
+    border-bottom: 3px solid #ffd700;
+    box-shadow: 0 0  15px rgba(225, 215, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-shadow: 0 0  10px rgba(225, 215, 0, 0.7);
+}
+
+main {
+    padding: 40px 20px;
+}
+
+.theater-screen {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 30px;
+    border: 5px solid #ffd700;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(225, 215, 0, 0.7), 0 0 40px rgba(225, 215, 0, 0.3);
+}
+
+theater-screen h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-shadow: 0 0 5px rgba(225, 215, 0, 0.5);
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 3px solid #ffd700;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(225, 215, 0, 0.6), 0 0 30px rgba(225, 215, 0, 0.2);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+button {
+    background-color: rgb(37, 108, 28);
+    color: #1a1a1a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all o.3s ease;
+    box-shadow: 0 0 10px rgba(190, 229, 16, 0.918);
+    animation: strongBlink 3s ease-in-out infinite;
+}
+
+@keyframes strongBlink {
+    0% {
+        opacity: 0.5;
+        filter: brightness(0.7);
+        box-shadow: 0 0 5px rgba(243, 231, 10, 0.837) 0 0 10px rgba(243, 231, 10, 0.836);
+        background-color: #356034;
+    }
+    
+    100% {
+        opacity: 1;
+        filter: brightness(1.5);
+        box-shadow: 0 0 30px rgba(243, 231, 10, 0.837) 0 0 60px rgba(243, 231, 10, 0.836);
+        background-color: #5eac5dbe;
+    }
+}
+
+button:hover {
+    background-color: #e6c200;
+    box-shadow: 0 0 35px rgba(225, 215, 0, 0.8) 0 0 70px rgba(243, 231, 10, 0.836);
+    transform: scale(1.05);
+    animation: none;
+}
+
+footer {
+    background-color: #141414;
+    padding: 15px;
+    border-top: 3px solid #ffd700;
+    box-shadow: 0 0 15px rgba(225, 215, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+@media (max-width:600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+    .theater-screen {
+        padding: 20px;
+    }
+    .video-container {
+        max-width: 100px;
+    }
+    .theater-screen h2 {
+        font-size: 1.4em;
+    }
+    button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+}

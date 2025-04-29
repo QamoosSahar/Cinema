@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="En">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎬 Sahar's Cinema 🍿</title>
+    <link rel="stylesheet" href="cinema style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <h1>🎬 Welcome to Sahar's Cinema 🍿</h1>
+</header>
+
+<main>
+    <section class="theater-screen">
+        <h2>Now Playing: The Minions Trailer</h2>
+        <div class="video-container">
+            <video controls>
+                <source src="Minion 2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="buttons">
+            <button onclick="document.querySelector('video').play()">Play Again</button>
+            <button oncanplay="alert('Thanks for rating!')">Rate Movie ⭐⭐⭐⭐⭐</button>
+        </div>
+    </section>
+</main>
+
+<footer>
+<p>2025 Sahar's Cinema. All rights reserved.</p>
+</footer>
+</html>
